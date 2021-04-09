@@ -9,9 +9,9 @@ class SpiderguaziSpider(scrapy.Spider):
     with open("url_brif/volkswagen.txt", "r", encoding="utf-8") as f:
         for line in f.readlines():
             line = line.strip("\n")
-            print(line)
+            # print(line)
             urls.append(line)
-    print(urls)
+    # print(urls)
     start_urls = urls
 
     def parse(self, response):
