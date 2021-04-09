@@ -34,7 +34,7 @@ class GuaziPipeline:
                              item['electricWindow'], item['electricMirror'], item['mirrorHeating'],
                              item['steeringWheel'], item['cruiseControl'], item['backAC'], item['ACControl'],
                              item['GPS'], item['reversingRadar'], item['reversingImage'], item['leatherSeat'],
-                             item['seatHeating'],
+                             item['seatHeating'], item['url']
                              ])
             print(item)
         return item

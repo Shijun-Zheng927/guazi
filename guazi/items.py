@@ -80,4 +80,5 @@ class GuaziItem(scrapy.Item):
     leatherSeat = scrapy.Field()        # 真皮座椅
     seatHeating = scrapy.Field()        # 前/后排座椅加热
 
+    url = scrapy.Field()
     pass

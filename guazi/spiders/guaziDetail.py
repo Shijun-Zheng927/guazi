@@ -92,4 +92,6 @@ class GuazidetailSpider(scrapy.Spider):
         item['leatherSeat'] = response.xpath('/html/body/div[4]/div[5]/div[2]/table[6]/tr[9]/td[2]/text()').get()
         item['seatHeating'] = response.xpath('/html/body/div[4]/div[5]/div[2]/table[6]/tr[10]/td[2]/text()').get()
 
+        item['url'] = response.request.url
+
         yield item
