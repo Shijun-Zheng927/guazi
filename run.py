@@ -1,6 +1,8 @@
 from scrapy import cmdline
 
-cmdline.execute('scrapy crawl spiderGuazi'.split())
+# cmdline.execute('scrapy crawl spiderGuazi'.split())
+
+cmdline.execute('scrapy crawl guaziDetail'.split())
 
 # urls = []
 # with open("url1.txt", "r") as f:
