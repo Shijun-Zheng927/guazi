@@ -6,7 +6,7 @@ class SpiderguaziSpider(scrapy.Spider):
     # allowed_domains = ['https://www.guazi.com/jn/buy/']
     urls = []
     #读取url列表
-    with open("url_brif/volkswagen.txt", "r", encoding="utf-8") as f:
+    with open("url_brif/honda.txt", "r", encoding="utf-8") as f:
         for line in f.readlines():
             line = line.strip("\n")
             # print(line)
@@ -28,7 +28,7 @@ class SpiderguaziSpider(scrapy.Spider):
             print(url, end="")
             result += url
         #写入文件
-        with open("url_detail/volkswagen.txt", "a", encoding="utf-8") as f:
+        with open("url_detail/honda.txt", "a", encoding="utf-8") as f:
             f.write(result)
 
 
